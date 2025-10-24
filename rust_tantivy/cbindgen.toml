@@ -1,0 +1,16 @@
+language = "C"
+namespace = "rust_tantivy"
+pragma_once = true
+include_guard = "RUST_TANTIVY_H"
+
+[export]
+include = ["tantivy_init", "tantivy_add_doc", "tantivy_search", "tantivy_last_error", "tantivy_free_str"]
+
+[fn]
+prefix = ""
+
+[defines]
+"target_os = linux" = "LINUX"
+"target_os = macos" = "MACOS"
+"target_os = ios" = "IOS"
+"target_os = android" = "ANDROID"

@@ -1,0 +1,18 @@
+# ffigen.yaml
+name: SearchFFI
+description: Bindings for search_ffi
+output: 'lib/ffi.dart'
+headers:
+  entry-points:
+    - 'rust_tantivy/binding.h'
+comments:
+  style: any
+  length: full
+preamble: |
+  // ignore_for_file: camel_case_types, non_constant_identifier_names, unused_import
+#functions:
+#  include:
+#    - 'add'
+#    - 'error_message_utf8'
+#    - 'last_error_length'
+#    - 'se_.*'
